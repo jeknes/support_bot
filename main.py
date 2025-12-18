@@ -103,7 +103,7 @@ async def on_shutdown(app: web.Application):
     await bot.session.close()
 
 
-if name == "main":
+if __name__ == "__main__":
     # Регистрируем роутер
     dp.include_router(router)
 
